@@ -1,0 +1,56 @@
+@media(max-width:375px){
+    div.modal-cabecalho{
+        width: 80%;
+    }
+    div.modal input,
+    div.modal a{
+        width: 80%;
+    }
+}
+
+@media(max-width:1250px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 543px;
+    }
+    
+    .divCabecalho{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spanLogin{
+        position: fixed;
+        bottom: 20px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 90%;
+    }
+
+    .primeiraDivMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        margin: 0 auto;
+    }
+    h1#titulo{
+        font-size: 30px;
+        padding-bottom: 26px;
+    }
+
+    h2#comentario{
+        padding-bottom: 26px;
+    }
+}
+

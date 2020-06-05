@@ -1,0 +1,134 @@
+main{
+    height: 100vh;
+}
+
+form{
+    width: 56%;
+    height: 935px;
+    min-width: 400px;
+    margin: 40px auto 20px auto;
+    border-radius: 6px;
+    background-color: rgba(170, 169, 169, 0.267);
+}
+
+fieldset.dados,
+fieldset.itens {
+    height: 390px;
+    border: 0;
+    padding: 0 75px;
+    color: var(--font-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    margin-top: 10px;
+}
+h2{
+    margin: 30px 0 0 0;
+}
+
+.name-group, .address-group1, .address-group2{
+    margin: 38px 0;
+    font-size: 14px;
+}
+
+.name-group{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 30px;
+    font-size: 13px;
+    width: 100%;
+    padding-left: 7px;
+}
+
+.address-group1{
+    display: flex;
+}
+
+#address1{
+    width: 385px;
+    margin-right: 10px;
+}
+#number{
+    width: 220px;
+}
+
+.address-group2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+#states, #cities{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    height: 30px;
+    width: 290px;
+}
+
+button{
+    width: 280px;
+    height: 56px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: beige;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    bottom: -70px;
+    right: 75px;
+    float: right;
+    transform: 400ms;
+}
+
+button:hover{
+    background-color: rgba(70, 241, 147, 0.705);
+}
+
+div#cabecalho-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#cabecalho-item h1{
+    margin: 0;
+}
+
+div#lista-item{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+div.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border: solid 3px beige;
+    border-radius: 8px;
+    background-color: var(--background-itens);
+    cursor: pointer;
+}
+div.card-item img,
+div.card-item p {
+    pointer-events: none;
+} 
+
+
+
+div.card-item.selected {
+    border: solid 3px var(--primary-color);
+}

@@ -1,0 +1,19 @@
+.divCabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.spanLogin{
+    display: flex;
+    align-items: center;
+}
+
+#textoLogin{
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+    margin: 5px;
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-color: rgb(39, 4, 53);
+    --primary-color: #34CB79;
+    --background-itens:rgb(216, 238, 216);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+}

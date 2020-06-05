@@ -1,0 +1,9 @@
+@media(max-width:1250px){
+    *{
+        box-sizing: border-box;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}

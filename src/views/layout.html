@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block title %}
+        <title>Ecoleta</title>
+    {% endblock title %}
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/cabecalho.css">
+    {% block styles %}{% endblock styles %}
+
+</head>
+
+<body>
+    {% block header %}{% endblock header %}
+    
+    <main>
+        {% block main %}{% endblock main %}        
+    </main>
+
+    {% block modal %}{% endblock %}
+
+    <script src="{{script}}"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+    {% set script = '../scripts/homePage.js' %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="../styles/homepage.css">
+        <link rel="stylesheet" href="../styles/homeResponsive.css">
+    {% endblock styles %}
+    
+    {% block header %}
+        <header class="cabecalho">
+            <div class="divCabecalho">
+                <img id="logomarca" src="../icones/logo.svg" alt="Logomarca">
+                <span class="spanLogin">
+                    <img id ="imgLogin"src="../icones/log-in.svg" alt="log in">
+                    <a href="/pointRegister" id="textoLogin">Cadastre um ponto de coleta</a>
+                </span>
+            </div>
+        </header>
+    {% endblock header %}
+    
+    {% block main %}
+        <div class="primeiraDivMain">
+            <h1 id="titulo">Seu marketplace de coleta de resíduos.</h1>
+            <h2 id="comentario">Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</h2>
+            <a href="#" class="linkBotao">
+                <section id="imgBotao"><img src="../icones/search.svg" alt="Lupa"></section>
+                <div class="textoBotao">
+                    <p>Pesquise pontos de coleta</p>
+                </div>
+            </a>
+        </div>
+    {% endblock main %}
+    
+    {% block modal %}    
+        <div class="modal hide">
+            <form action="/searchResults">  
+                <div class="modal-cabecalho">    
+                    <h1>Pontos de coleta</h1>
+                    <img src="../icones/x.svg" alt="Fechar" name="close">
+                </div>
+                <input type="text" name="searchCity"  placeholder="Digite a cidade ">
+                <button>Buscar</button>
+            </form>
+        </div>
+    {% endblock modal %}

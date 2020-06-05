@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+    
+    {% set script = '../scripts/pointRegister.js'%}
+
+    {% block title %}
+        <title>Ecoleta - Cadastre um ponto de coleta</title>
+    {% endblock title %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="../styles/pointRegister.css">
+        <link rel="stylesheet" href="../styles/pointResponsive.css">
+    {% endblock styles %}
+
+    {% block header %}
+        <!-- Uso o include para pequenas estruturas -->
+        {% include 'partials/page-header.html'%}
+    {% endblock header %}
+    
+    {% block main %}
+        <form action="">
+                
+            <fieldset class="dados">
+                <legend><h1>Cadastro do ponto de coleta.</h1></legend>
+                <h2>Dados</h2>
+                <div class="name-group">
+                    <label for="name">Nome do ponto:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="address-group1">
+                    <div id="address1">
+                        <label for="address">Endereço:</label>
+                        <input type="text" name="address" required>
+                    </div>
+                    <div id="number">
+                        <label for="number">Número/Complemento:</label>
+                        <input type="text" name="number" required>
+                    </div>
+                </div>
+                <div class="address-group2">
+                    <div id="states">
+                        
+                        <label for="uf">Estado:</label>
+                        <select name="uf" required>
+                            <option value="">-- Selecione um estado --</option>
+                        </select>
+                        
+                        <input type="hidden" name="states">                    
+                    
+                    </div>
+                    <div id="cities">
+                        <label for="cities">Cidade:</label>
+                        <select name="cities" disabled required>
+                            <option value="">-- Selecione uma cidade --</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            
+            
+            <fieldset class="itens">
+                <div id="cabecalho-item">
+                    <h1>Itens de coleta</h1>
+                    <h5>Selecione um ou mais itens abaixo</h5>
+                </div>
+                <div id="lista-item">
+                    <div class="card-item" id="Lâmpadas">
+                        <img src="../icones/lampadas.svg" alt="Lâmpada">
+                        <p>Lâmpadas</p>
+                    </div>
+                    <div class="card-item" id="Pilhas e Baterias">
+                        <img src="../icones/baterias.svg" alt="Pilhas e Baterias">
+                        <p>Pilhas e Baterias</p>
+                    </div>
+                    <div class="card-item" id="Papéis e Papelão">
+                        <img src="../icones/papeis-papelao.svg" alt="Papéis e Papelão">
+                        <p>Papéis e Papelão</p>
+                    </div>
+                    <div class="card-item" id="Resíduos Eletrônicos" >
+                        <img src="../icones/eletronicos.svg" alt="Resíduos Eletrônicos">
+                        <p>Resíduos Eletrônicos</p>
+                    </div>
+                    <div class="card-item" id="Resíduos Orgânicos">
+                        <img src="../icones/organicos.svg" alt="Resíduos Orgânicos">
+                        <p>Resíduos Orgânicos</p>
+                    </div>
+                    <div class="card-item" id="Óleo de Cozinha">
+                        <img src="../icones/oleo.svg" alt="Óleo de Cozinha">
+                        <p>Óleo de Cozinha</p>
+                    </div>
+                    <input type="hidden" name="itens">
+                </div>
+            </fieldset>
+            <button type="submit">Cadastrar ponto de coleta</button>
+        </form>
+    {% endblock main %}
