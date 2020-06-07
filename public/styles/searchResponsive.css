@@ -1,0 +1,13 @@
+@media(max-width: 500px){
+    div.allCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 320px) and (max-width:425px){
+    div.allCards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

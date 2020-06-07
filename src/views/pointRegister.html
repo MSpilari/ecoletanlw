@@ -17,14 +17,20 @@
     {% endblock header %}
     
     {% block main %}
-        <form action="">
+        <form action="/pointRegister" method="POST">
                 
             <fieldset class="dados">
                 <legend><h1>Cadastro do ponto de coleta.</h1></legend>
                 <h2>Dados</h2>
-                <div class="name-group">
-                    <label for="name">Nome do ponto:</label>
-                    <input type="text" name="name" required>
+                <div class="nameNPhoto">
+                    <div id="pointName">
+                        <label for="name">Nome da entidade:</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div id="pointUrl">
+                        <label for="url">Foto da entidade:</label>
+                        <input type="url" name="imgUrl" placeholder="https://" required>
+                    </div>
                 </div>
                 <div class="address-group1">
                     <div id="address1">
@@ -93,3 +99,9 @@
             <button type="submit">Cadastrar ponto de coleta</button>
         </form>
     {% endblock main %}
+
+    {% block modal %}
+        {% if saved %}
+            {% include './partials/modalSuccess.html'%}
+        {% endif %}
+    {% endblock %}

@@ -122,7 +122,8 @@ div.modal button{
     height: 47px;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 8px;
-
+    outline: none;
+    cursor: pointer;
 }
 
 div.hide{

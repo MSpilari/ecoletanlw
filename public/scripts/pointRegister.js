@@ -56,4 +56,3 @@ window.addEventListener('load', () => setStates())
 stateSelector.addEventListener('change', event => setCities(event) )
 
 listItem.addEventListener('click', event => setItens(event))
-
