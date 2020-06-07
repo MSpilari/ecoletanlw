@@ -1,7 +1,5 @@
 # Ecoleta - NLW
 
-![Header Markdown](./public/icones/headerMarkdown.jpg?raw=true)
-
 Esta aplicação foi desenvolvida durante a NLW da Rocketseat, sendo uma aplicação **FullStack**, pois programei o FrontEnd e o BackEnd.
 
 ## Objetivo
@@ -26,3 +24,17 @@ O que foi proposto era a criação de uma aplicação em que o usuário poderia:
   * Para tornar as páginas HTLM dinâmicas, pois algumas delas teriam que renderizar dados do banco de dados e estes **não** poderiam ser __Hard Enconded__.
 * SQLite3.
   * Foi usado como o banco de dados da aplicação, em que o usuário consegue consultar e criar novos dados no mesmo.
+
+## Screenshots da aplicação
+
+### HomePage
+
+![Ecoleta HomePage](./public/icones/homePage.png?raw=true)
+
+### Página de cadastro
+
+![Ecoleta Cadastro](./public/icones/cadastrofinal.png?raw=true)
+
+### Página dos resultados da busca
+
+![Ecoleta Resultados](./public/icones/resultados.png?raw=true)
