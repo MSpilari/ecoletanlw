@@ -1,6 +1,6 @@
 # Ecoleta - NLW
 
-![Header Markdown]('./public/icones/headerMarkdown.jpg')
+![Header Markdown](./public/icones/headerMarkdown.jpg?raw=true)
 
 Esta aplicação foi desenvolvida durante a NLW da Rocketseat, sendo uma aplicação **FullStack**, pois programei o FrontEnd e o BackEnd.
 
